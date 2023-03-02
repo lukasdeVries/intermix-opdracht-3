@@ -1,0 +1,206 @@
+:root {
+  --text-color-main: #323131;
+  --accent-color-first: #2085EB;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #F6F6F6 53%, #FFFFFF 53%);
+}
+
+body {
+  font-family: "lexend";
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1300px) {
+  body {
+    max-height: none;
+  }
+}
+
+.service__container {
+  max-width: 1280px;
+  min-height: 568px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--text-color-main);
+}
+@media (max-width: 1300px) {
+  .service__container {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  .service__container {
+    padding-bottom: 2rem;
+  }
+}
+.service__header-container {
+  font-size: 36px;
+  color: var(--text-color-main);
+}
+@media (max-width: 1300px) {
+  .service__header-container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 1000px) {
+  .service__header-container {
+    padding-bottom: 2rem;
+  }
+}
+.service__header-container h1 {
+  padding-top: 2rem;
+}
+.service__header-container h1:hover {
+  color: #6e6c6c;
+}
+.service__cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  row-gap: 3.5rem;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+  min-width: 900px;
+}
+@media (max-width: 1300px) {
+  .service__cards-container {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+@media (max-width: 1000px) {
+  .service__cards-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    min-width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .service__cards-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    min-width: 100px;
+  }
+}
+
+/*
+.service__container {
+    max-width: 1280px;
+    min-height: 568px;;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text-color-main);
+    @media( max-width: 1300px) {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    @media( max-width: 1000px ){
+        padding-bottom: 2rem;
+    }
+
+
+}
+
+.service__header-container {
+    font-size: 36px;
+    color: var(--text-color-main);
+    @media( max-width: 1300px) {
+        height: fit-content;
+    }
+    @media( max-width: 1000px ){
+        padding-bottom: 2rem;
+    }
+
+    h1{
+        padding-top: 2rem;
+        &:hover{
+            color: #6e6c6c;
+        }
+    }
+
+
+
+}
+
+.service__cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    row-gap: 3.5rem;
+    column-gap: 3.5rem;
+    min-width: 900px;
+    @media( max-width: 1300px ) {
+        grid-template-columns: repeat(2, 400px);
+    }
+    @media( max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        min-width: 500px;
+    }
+    @media( max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        min-width: 100px;
+    }
+
+}
+*/
+.service {
+  height: 100%;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1.5rem;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .service {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+.service .service__content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 2.5rem 2.1rem;
+}
+@media (max-width: 1000px) {
+  .service .service__content {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+.service .service__header {
+  font-weight: bold;
+  font-size: 25px;
+}
+.service .service__price {
+  color: var(--accent-color-first);
+  font-size: 36px;
+  font-weight: bold;
+}
+.service:hover {
+  background-color: rgba(237, 237, 245, 0.979);
+}/*# sourceMappingURL=style.css.map */
